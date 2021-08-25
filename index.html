@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTHQUAKES Home</title>
+
+    <!-- Styles shared by all pages -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Styles for this page -->
+    <link rel="stylesheet" href="./styles/style-index.css">
+
+    <!-- Styles and script fo "Leaflet", an open-source JavaScript library for mobile-friendly 
+        interactive maps. https://leafletjs.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <!-- Container with Grid Layout display property. Contains 7 sections. -->
+    <div class="page">
+
+        <!-- Navigation bar of the website -->
+        <div class="navigation-bar">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Title of the page -->
+        <div class="container" id="title-container">
+            <div id="title-content">Latest earthquakes in the world</div>
+        </div>
+
+        <!-- Inputs from the user -->
+        <div class="container container-margins-1" id="input-container">
+            <div id="input-content">
+                <label for="min-magnitude-input">Minimum magnitude</label>
+                <input type="number" min="0" max="10" value="6" id="min-magnitude-input">
+                <label for="max-magnitude-input">Maximum magnitude</label>
+                <input type="number" min="0" max="10" value="10" id="max-magnitude-input">
+                <button class="button" id="update-button">Update</button>
+            </div>
+        </div>
+
+        <!-- List of earthquakes -->
+        <div class="container container-margins-1" id="list-container">
+            <div id="list-title">Loading earthquakes list</div>
+            <div id="list-content"></div>
+        </div>
+
+        <!-- Details of an earthquake -->
+        <div class="container container-margins-2" id="details-container">
+            <div id="details-content">
+                <div class="detail-container">
+                    <div class="detail-label">Magnitude on Ritcher scale</div>
+                    <div class="detail-value" id="magnitude"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Location</div>
+                    <div class="detail-value" id="location"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Date</div>
+                    <div class="detail-value" id="date"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Intensity on Modified Mercalli scale</div>
+                    <div class="detail-value" id="intensity"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Alert</div>
+                    <div class="detail-value" id="alert"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Tsunami</div>
+                    <div class="detail-value" id="tsunami"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Felt reports</div>
+                    <div class="detail-value" id="felt"></div>
+                </div>
+                <div class="detail-container">
+                    <div class="detail-label">Epicenter (latitude, longitude, depth)</div>
+                    <div class="detail-value" id="epicenter"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map of an earthquake -->
+        <div class="container container-margins-2" id="map-container">
+            <div id="map-content"></div>
+        </div>
+
+        <!-- Footer of the website -->
+        <div class="container footer" id="footer-container">
+            <div>Website designed and programmed by Hector J. Orozco</div>
+        </div>
+    </div>
+
+    <script src="./scripts/script-index.js"></script>
+</body>
+
+</html>

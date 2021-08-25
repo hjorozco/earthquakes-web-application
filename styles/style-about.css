@@ -1,0 +1,58 @@
+.page {
+    grid-template: 50px 60px 1fr 50px / 1fr;
+}
+
+#about-container {
+    padding: 20px;
+    overflow: auto;
+}
+
+.about-paragraph, .glossary-paragraph {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+
+#glossary-content {
+    display: grid;
+    grid-template: 1fr 1fr / 1.1fr 0.9fr;
+    padding-top: 40px;
+}
+
+#glossary-image-1, #glossary-image-2 {
+    margin: 20px;
+}
+
+.glossary-term {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0px;
+    height: fit-content;
+}
+
+.glossary-term, .glossary-image {
+    border-radius: 10px;
+}
+
+img {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    font-size: small;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Change "#glossary-content" to one column when screen width 700 px or less */
+
+@media (max-width:700px) {
+    #glossary-content {
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+    }
+}

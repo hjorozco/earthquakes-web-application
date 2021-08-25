@@ -1,0 +1,41 @@
+.page {
+    grid-template: 50px 60px 1fr 50px / 1fr;
+}
+
+#form-container {
+    margin: 20px;
+    overflow: auto;
+}
+
+#form-content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-buttons-container {
+    align-self: flex-end;
+}
+
+input[type=text], input[type=email], textarea {
+    display: block;
+}
+
+input[type=text], input[type=email] {
+    width: 300px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+#reset-button {
+    margin-left: 20px;
+}
+
+/* Decrease the width of the text area when the width of the screen is 700px or less */
+@media (max-width:700px) {
+    textarea {
+        width: 450px;
+    }
+}

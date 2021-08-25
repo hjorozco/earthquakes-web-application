@@ -1,0 +1,145 @@
+/* Styles shared by all pages  */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Grey 50*/
+    background-color: #FAFAFA;
+    font-size: 16px;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+
+.container {
+    /* Brown 700 */
+    color: #5D4037;
+}
+
+.navigation-bar {
+    /*Brown 700*/
+    background-color: #5D4037;
+    display: flex;
+    padding-left: 10px;
+    height: 50px;
+}
+
+.navigation-bar a {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-bar a:hover {
+    text-decoration: underline;
+}
+
+.navigation-bar a.active {
+    /*Brown 900*/
+    background-color: #3E2723;
+    /* Amber 300 */
+    color: #FFD54F;
+    text-decoration: none;
+}
+
+#title-container {
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Brown 100 */
+    background-color: #D7CCC8;
+    overflow: auto;
+}
+
+#title-content {
+    align-self: center;
+}
+
+input[type=number], input[type=text], input[type=email], textarea {
+    /* Brown 700 */
+    border: 1px solid #5D4037;
+    border-radius: 3px;
+}
+
+.button {
+    /* Brown 700 */
+    background-color: #5D4037;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* Brown 900; */
+    background-color: #3E2723;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin-top: 10px;
+    /* Brown 50 */
+    background-color: #EFEBE9;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    /* Brown 700 */
+    color: #5D4037;
+    /* Brown 700 */
+    background-color: #5D4037
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-size: small;
+    visibility: hidden;
+    width: 120px;
+    /* AmberA400 */
+    background-color: #FFC400;
+    /* Brown 900 */
+    color: #3E2723;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFC400 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

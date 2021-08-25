@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTHQUAKES Contact</title>
+    <!-- Styles shared by all pages -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Styles for this page -->
+    <link rel="stylesheet" href="./styles/style-contact.css">
+</head>
+
+<body>
+    <!-- Container with Grid Layout display property. Contains 4 sections. -->
+    <div class="page">
+
+        <!-- Navigation bar of the website -->
+        <div class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="javascript:void(0)">Contact</a>
+        </div>
+
+        <!-- Title of the page -->
+        <div class="container" id="title-container">
+            <div id="title-content">Contact form</div>
+        </div>
+
+        <!-- Form that receives input from the user and sends it to an email using SMTPjs libray-->
+        <div class="container" id="form-container">
+            <form id="form-content" method="post" enctype="text/plain">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" name="name"><br>
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" name="email"><br>
+                <label for="comments-input">Comments</label>
+                <textarea id="comments-input" name="comments" cols="100" rows="20"></textarea>
+                <div id="form-buttons-container">
+                    <div class="tooltip">
+                        <input class="button" id="send-button" type="button" value="SEND">
+                        <span class="tooltiptext">Press only one time and wait for a confirmation message</span>
+                    </div>
+
+                    <input class="button" id="reset-button" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer of the website -->
+        <div class="container footer">
+            <div>Website designed and programmed by Hector J. Orozco</div>
+        </div>
+
+    </div>
+
+    <!-- Send email from client-side javascript - free js library SMTPjs.com-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Script for this page -->
+    <script src="./scripts/script-contact.js"></script>
+</body>
+
+</html>

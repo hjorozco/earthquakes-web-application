@@ -4,7 +4,7 @@
 
 This website shows information about earthquakes located and registered by the  [USGS](https://www.usgs.gov/)  (United States Geological Survey) and its contributing agencies, that happened in the world on the last 30 days, filtered by a minimum and maximum magnitude.
 
-Visit the Earthquakes website [here](www.github.com).
+Visit the Earthquakes website [here](https://hjorozco.github.io/earthquakes-website).
 
 ***About the code.***
  - The data displayed comes from the [USGS Earthquake Catalog API](https://earthquake.usgs.gov/fdsnws/event/1/), an implementation of the [FDSN Event Web Service Specification](http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf), which allows custom searches for earthquake information using a variety of parameters.

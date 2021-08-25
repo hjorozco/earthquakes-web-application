@@ -3,9 +3,9 @@
 
 The purpose of this website is to let visitors get information about earthquakes in the whole world, that happened on the last 30 days. The visitor can filter the information by defining a minimum and maximum magnitude. The earthquakes are displayed as a list and the visitor can click on a particular earthquake to see its details and a map showing the location.
 
-The *About* section contains information about the data that the USGS provides and a little glossary.
+The *About* section contains information about the data that the USGS provides and a glossary.
 
-The *Comments* section lets the visitor send comments about the website.
+The *Contact* section lets the visitor send comments about the website.
 
 Visit the Earthquakes website [here](https://hjorozco.github.io/earthquakes-website).
 

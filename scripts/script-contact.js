@@ -54,20 +54,25 @@ const validateEmail = email => {
 const sendEmail = () => {
     let inputsValidation = validateInputs();
 
-    if (inputsValidation === SEND)
+    if (inputsValidation === SEND) {
+        let sendButton = document.getElementById("send-button");
+        disableButton(true, sendButton);
+
         Email.send({
             SecureToken: "af5403e3-e0b4-47a6-a666-d8e511f5b547",
             To: 'hectorjoseorozco@gmail.com',
             From: "kiju6754@outlook.com",
             Subject: "Earthquakes website comments",
             Body: setEmailBody()
-        }).then(
-            message =>
-                message == "OK" ?
-                    alert("Your comments were sent. Thank you!") :
-                    alert("Comments were not sent. Please try again later")
-
-        );
+        }).then(message => {
+            if (message == "OK") {
+                disableButton(false, sendButton);
+                alert("Your comments were sent. Thank you!");
+            } else {
+                alert("Comments were not sent. Please try again later");
+            }
+        });
+    }
     else {
         inputsValidation === COMMENT_EMPTY ?
             document.getElementById("comments-input").focus() :

@@ -26,7 +26,7 @@ const fetchDataFromUsgs = async (minMagnitude, maxMagnitude) => {
     const fetchUrl = usgsEarthquakesApiEndpoint + queryParameters;
     console.log("URL used to fetch data from USGS Earthquakes API:\n" + fetchUrl);
 
-    disableUpdateButton(true);
+    disableButton(true, document.getElementById("update-button"));
     document.getElementById("list-title").innerHTML = "Loading earthquakes list";
     document.getElementById("list-content").innerHTML = "";
     document.getElementById("details-content").style.display = "none";
@@ -116,7 +116,7 @@ const displayEarthquakes = data => {
     let listTitle = document.getElementById("list-title");
     let listContent = document.getElementById("list-content");
 
-    disableUpdateButton(false);
+    disableButton(false, document.getElementById("update-button"));
 
     if (data !== null) {
 
@@ -202,17 +202,6 @@ const displayEarthquakeMap = (coordinates, earthquakeTitle) => {
     mapMarker = new L.Marker([latitude, longitude]);
     map.addLayer(mapMarker);
     mapMarker.bindPopup(earthquakeTitle).openPopup();
-}
-
-/**
- * Disable of enable the "Update" button.
- * 
- * @param {Boolean} disable True to disable the button, false to enable it.
- */
-const disableUpdateButton = disable => {
-    let updateButton = document.getElementById("update-button");
-    updateButton.disabled = disable;
-    updateButton.style.color = disable ? "lightgrey" : "white";
 }
 
 /**

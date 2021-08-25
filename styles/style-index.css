@@ -1,7 +1,7 @@
 /* index.html style */
 
 .page {
-    grid-template: 50px 60px 60px 1fr 1fr 50px / 60% 40%;
+    grid-template: 50px 40px 50px 1fr 1fr 40px / 60% 40%;
 }
 
 .navigation-bar {
@@ -90,7 +90,7 @@
 
 @media (max-width:700px) {
     .page {
-        grid-template: 50px 60px 60px 2fr 1fr 1fr 50px / 1fr;
+        grid-template: 50px 40px 50px 2fr 1fr 1fr 40px / 1fr;
     }
     .navigation-bar {
         grid-column: 1 / 2;

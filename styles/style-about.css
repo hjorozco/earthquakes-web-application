@@ -1,5 +1,5 @@
 .page {
-    grid-template: 50px 60px 1fr 50px / 1fr;
+    grid-template: 50px 40px 1fr 40px / 1fr;
 }
 
 #about-container {

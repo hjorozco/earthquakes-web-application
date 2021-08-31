@@ -1,13 +1,13 @@
-### Earthquakes website.
-***About the website.***
+### Earthquakes web application.
+***About the application.***
 
-The purpose of this website is to let visitors get information about earthquakes in the whole world, that happened on the last 30 days. The visitor can filter the information by defining a minimum and maximum magnitude. The earthquakes are displayed as a list and the visitor can click on a particular earthquake to see its details and a map showing the location.
+The purpose of this application is to let visitors get information about earthquakes in the whole world, that happened on the last 30 days. The visitor can filter the information by defining a minimum and maximum magnitude. The earthquakes are displayed as a list and the visitor can click on a particular earthquake to see its details and a map showing the location.
 
-The *About* section contains information about the data that the USGS provides and a glossary.
+The *About* section contains information about the source of the data displayed, and a glossary.
 
-The *Contact* section lets the visitor send comments about the website.
+The *Contact* section lets the visitor send comments.
 
-Visit the Earthquakes website [here](https://hjorozco.github.io/earthquakes-website).
+[Click here to use the Earthquakes web application](https://hjorozco.github.io/earthquakes-web-application).
 
 ***About the code.***
 - The data displayed comes from the [USGS Earthquake Catalog API](https://earthquake.usgs.gov/fdsnws/event/1/), an implementation of the [FDSN Event Web Service Specification](http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf), which allows custom searches for earthquake information using a variety of parameters.

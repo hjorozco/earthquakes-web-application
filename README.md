@@ -15,3 +15,8 @@ The *Contact* section lets the visitor send comments.
 for creating interactive maps.
 - Leaflet uses data from [OpenStreetMap](https://www.openstreetmap.org/) which provides free open map data.
 - The *Contact* form uses [SmtpJS.com](https://smtpjs.com/), a license free script written in JavaScript that uses the SMTP protocol to send emails.
+
+_ _ _ _
+
+#### License
+No license.
